@@ -1,12 +1,14 @@
-import { StyleSheet, ViewStyle, TextStyle } from 'react-native';
+import { StyleSheet, ViewStyle, TextStyle, ImageStyle } from 'react-native';
 
 interface Styles {
     container: ViewStyle;
     title: TextStyle;
+    menuIcon: ImageStyle;
 }
 
 const styles = StyleSheet.create<Styles>({
     container: {
+        width: '100%',
         display: 'flex',
         backgroundColor: '#FFFFFF',
         justifyContent: 'space-between',
@@ -24,13 +26,11 @@ const styles = StyleSheet.create<Styles>({
         fontSize: 16,
         fontWeight: 'bold',
     },
+    menuIcon: {
+        width: 24,
+        height: 24,
+        resizeMode: 'contain',
+    }
 });
 
 export default styles;
-
-
-// .navbar-icon {
-//     width: 24px;
-//     height: 24px;
-//     fill: #333333;
-// }
