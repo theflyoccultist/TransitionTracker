@@ -4,9 +4,13 @@ interface Styles {
   container: ViewStyle;
   taskContainer: ViewStyle;
   taskText: TextStyle;
+  taskTextInput: TextStyle;
   completedTask: TextStyle;
   box: ViewStyle;
   checkmark: TextStyle;
+  crossmark: TextStyle;
+  addTaskContainer: ViewStyle;
+  addTaskInput: TextStyle;
 }
 
 const styles = StyleSheet.create<Styles>({
@@ -27,6 +31,12 @@ const styles = StyleSheet.create<Styles>({
     fontSize: 16,
     color: '#333',
   },
+  taskTextInput: {
+    fontSize: 16,
+    color: '#333',
+    borderBottomWidth: 1,
+    borderColor: '#ccc',
+  },
   completedTask: {
     textDecorationLine: 'line-through',
     color: '#aaa',
@@ -44,6 +54,24 @@ const styles = StyleSheet.create<Styles>({
   checkmark: {
     color: '#6200ee',
     fontSize: 18,
+  },
+  crossmark: {
+    color: '#ff0000',
+    fontSize: 18,
+  },
+  addTaskContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  addTaskInput: {
+    flex: 1,
+    fontSize: 10,
+    padding: 8,
+    borderWidth: 1,
+    borderColor: '#ccc',
+    borderRadius: 8,
+    marginRight: 10,
   },
 });
 

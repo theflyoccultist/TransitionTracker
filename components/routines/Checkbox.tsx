@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Pressable } from "react-native";
+import { Text, Pressable } from "react-native";
 import styles from '@/src/styles/MorningChecklistStyle';
 
 interface CheckBoxProps {

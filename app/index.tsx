@@ -4,7 +4,7 @@ import styles from "@/src/styles/CommonStyles";
 
 import NavBar from '@/components/NavBar';
 import QuoteGenerator from '@/components/QuoteGenerator';
-import MorningChecklist from '@/components/MorningChecklist';
+import MorningChecklist from '@/components/routines/MorningChecklist';
 import ImageLibrary from '@/components/ImageLibrary';
 import Progress from '@/components/Progress';
 
