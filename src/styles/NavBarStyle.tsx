@@ -4,15 +4,16 @@ interface Styles {
     container: ViewStyle;
     title: TextStyle;
     menuIcon: ImageStyle;
+    settingsIcon: ImageStyle;
 }
 
 const styles = StyleSheet.create<Styles>({
     container: {
         width: '100%',
-        display: 'flex',
         backgroundColor: '#FFFFFF',
         justifyContent: 'space-between',
         alignItems: 'center',
+        flexDirection: 'row',
         paddingVertical: 15,
         paddingHorizontal: 10,
         shadowColor: '#000',
@@ -22,13 +23,21 @@ const styles = StyleSheet.create<Styles>({
         elevation: 5,
     },
     title: {
-        color: '#333333',
-        fontSize: 16,
+        color: '#1E2029',
+        fontSize: 18,
         fontWeight: 'bold',
+        textAlign: 'center',
     },
     menuIcon: {
-        width: 24,
-        height: 24,
+        width: 30,
+        height: 30,
+        tintColor: '#1E2029',
+        resizeMode: 'contain',
+    },
+    settingsIcon: {
+        width: 30,
+        height: 30,
+        tintColor: '#1E2029',
         resizeMode: 'contain',
     }
 });

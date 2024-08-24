@@ -1,21 +1,36 @@
 import React from 'react';
-import { SafeAreaView, ScrollView } from "react-native";
+import { SafeAreaView, ScrollView, View, Text } from "react-native";
 import styles from "@/src/styles/CommonStyles";
+
 import NavBar from '@/components/NavBar';
-import Button from '@/components/Button';
-import CheckBox from '@/components/Checkbox';
-import TaskProgress from '@/components/TaskProgress';
+import QuoteGenerator from '@/components/QuoteGenerator';
+import MorningChecklist from '@/components/MorningChecklist';
+import ImageLibrary from '@/components/ImageLibrary';
+import Progress from '@/components/Progress';
 
 export default function Index() {
   return (
-    <SafeAreaView style={styles.safeArea}>
+    <SafeAreaView style={styles.container}>
       <NavBar />
-      <ScrollView contentContainerStyle={styles.content}>
-        <CheckBox label="Task 1" />
-        <CheckBox label="Task 2" />
-        <TaskProgress label="Progress" progress={0.5} />
-        <Button title='Button 1' onPress={() => console.log("button 1 pressed")}/>
-        <Button title='Button 2' onPress={() => console.log("button 2 pressed")}/>
+      <ScrollView>
+        <View style={styles.module}>
+          <QuoteGenerator />
+        </View>
+
+        <View style={styles.module}>
+          <Text style={styles.title}>Daily Routine Checklist (Placeholder)</Text>
+          <MorningChecklist />
+        </View>
+
+        <View style={styles.module}>
+          <Text style={styles.title}>Image Library</Text>
+          <ImageLibrary />
+        </View>
+
+        <View style={styles.module}>
+        <Text style={styles.title}>How far have you progressed into your transition?</Text>
+          <Progress />
+        </View>
 
       </ScrollView>
     </SafeAreaView>

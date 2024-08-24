@@ -1,35 +1,30 @@
 import { StyleSheet, ViewStyle, TextStyle } from 'react-native';
 
 interface Styles {
-  title: TextStyle;
   container: ViewStyle;
-  module: ViewStyle;
+  quoteText: TextStyle;
 }
 
 const styles = StyleSheet.create<Styles>({
-  title: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: '#333',
-    marginBottom: 15,
-  },
   container: {
-    flex: 1,
-    padding: 15,
-    backgroundColor: '#f0f0f0',
-  },
-  module: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 20,
     backgroundColor: '#fff',
     borderRadius: 15,
-    padding: 20,
-    marginBottom: 15,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2},
+    shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 5,
-    elevation: 2,
+    elevation: 3,
+  },
+  quoteText: {
+    fontSize: 16,
+    fontStyle: 'italic',
+    color: '#333333',
+    marginBottom: 10,
+    textAlign: 'center',
   },
 });
 
 export default styles;
-

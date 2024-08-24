@@ -9,7 +9,6 @@ interface Styles {
 
 const styles = StyleSheet.create<Styles>({
   container: {
-    backgroundColor: '#ffffff',
     padding: 15,
     borderRadius: 10,
     shadowColor: '#000',
@@ -22,7 +21,6 @@ const styles = StyleSheet.create<Styles>({
   title: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#333333',
     marginBottom: 10,
   },
   description: {
@@ -34,6 +32,7 @@ const styles = StyleSheet.create<Styles>({
     width: '100%',
     borderRadius: 5,
     marginBottom: 10,
+    resizeMode: 'cover',
   },
 });
 
