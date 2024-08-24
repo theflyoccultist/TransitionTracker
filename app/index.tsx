@@ -18,7 +18,7 @@ export default function Index() {
         </View>
 
         <View style={styles.module}>
-          <Text style={styles.title}>Daily Routine Checklist (Placeholder)</Text>
+          <Text style={styles.title}>Daily Routine Checklist</Text>
           <MorningChecklist />
         </View>
 

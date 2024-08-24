@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text } from 'react-native';
 import styles from '@/src/styles/QuoteGeneratorStyle';
+import Button from './Button';
 
 const quotes = [
   "The only way to do great work is to love what you do. - Steve Jobs",
