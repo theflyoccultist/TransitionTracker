@@ -5,7 +5,7 @@ import styles from "@/src/styles/CommonStyles";
 import NavBar from '@/components/NavBar';
 import QuoteGenerator from '@/components/QuoteGenerator';
 import MorningChecklist from '@/components/routines/MorningChecklist';
-import ImageLibrary from '@/components/ImageLibrary';
+import PhotoGallery from '@/components/imagelibrary/PhotoGallery';
 import Progress from '@/components/Progress';
 
 export default function Index() {
@@ -24,7 +24,7 @@ export default function Index() {
 
         <View style={styles.module}>
           <Text style={styles.title}>Image Library</Text>
-          <ImageLibrary />
+          <PhotoGallery />
         </View>
 
         <View style={styles.module}>

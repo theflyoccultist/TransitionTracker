@@ -13,7 +13,11 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": { 
+        "NSCameraUsageDescription": "We need camera permissions to allow you to upload photos.", 
+        "NSPhotoLibraryAddUsageDescription": "We need photo library permissions to allow you to upload images.", 
+        "NSPhotoLibraryUsageDescription": "We need photo library permissions to allow you to upload profile images." }
     },
     "android": {
       "adaptiveIcon": {
