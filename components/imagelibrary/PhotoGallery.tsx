@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { View, Image, StyleSheet, Pressable, Modal } from 'react-native';
+import { View, Image, StyleSheet, Pressable } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Button from '../Button';
+import Modal from 'react-native-modal'
 
 type Photo = {
   uri: string;
@@ -43,13 +44,6 @@ const PhotoGallery = () => {
             }
         };
 
-    const doubleTapGesture = Gesture.Tap()
-        .numberOfTaps(2)
-        .onEnd(() => {
-          if (modalVisible) {
-            setModalVisible(false);
-          }
-        })
         
         return (
 
@@ -64,20 +58,14 @@ const PhotoGallery = () => {
 
             <Button title="Upload Photo" onPress={pickImage} />
       
-            <Modal 
-              visible={modalVisible} 
-              transparent={true} 
-              onRequestClose={closeFullScreen}
-            >
+            <Modal isVisible={modalVisible}>
               <View style={styles.modalContainer}>
                 {currentPhoto && (
-                  <GestureDetector gesture={Gesture.Exclusive(doubleTapGesture)}>
                     <Image 
                       source={{ uri: currentPhoto.uri }}
                       style={styles.fullScreenImage}
-                    />                    
-                  </GestureDetector>
-                )}
+                    />)}
+                    <Button title="Close" onPress={closeFullScreen} />
               </View>
             </Modal>
 
