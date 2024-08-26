@@ -29,10 +29,10 @@ const styles = StyleSheet.create<Styles>({
     marginBottom: 10,
   },
   image: {
-    width: '100%',
-    borderRadius: 5,
+    width: 200,
+    height: 200,
+    borderRadius: 10,
     marginBottom: 10,
-    resizeMode: 'cover',
   },
 });
 

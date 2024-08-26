@@ -1,6 +1,7 @@
 import React from 'react';
 import { SafeAreaView, ScrollView, View, Text } from "react-native";
 import styles from "@/src/styles/CommonStyles";
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import NavBar from '@/components/NavBar';
 import QuoteGenerator from '@/components/QuoteGenerator';
@@ -24,7 +25,9 @@ export default function Index() {
 
         <View style={styles.module}>
           <Text style={styles.title}>Image Library</Text>
-          <PhotoGallery />
+          <GestureHandlerRootView style={{ flex: 1 }}>
+            <PhotoGallery />
+          </GestureHandlerRootView>
         </View>
 
         <View style={styles.module}>
