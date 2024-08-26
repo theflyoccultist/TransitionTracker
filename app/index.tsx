@@ -7,7 +7,7 @@ import NavBar from '@/components/NavBar';
 import QuoteGenerator from '@/components/QuoteGenerator';
 import MorningChecklist from '@/components/routines/MorningChecklist';
 import PhotoGallery from '@/components/imagelibrary/PhotoGallery';
-import Progress from '@/components/Progress';
+import Habit from '@/components/progresstracker/Habit';
 
 export default function Index() {
   return (
@@ -32,7 +32,7 @@ export default function Index() {
 
         <View style={styles.module}>
         <Text style={styles.title}>How far have you progressed into your transition?</Text>
-          <Progress />
+          <Habit />
         </View>
 
       </ScrollView>

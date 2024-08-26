@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View, Image, StyleSheet, Pressable } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
-import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Button from '../Button';
 import Modal from 'react-native-modal'
 

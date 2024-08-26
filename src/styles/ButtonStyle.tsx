@@ -8,45 +8,28 @@ interface Styles {
 
 const styles = StyleSheet.create<Styles>({
   button: {
-    backgroundColor: '#E5E5E5',
+    backgroundColor: '#555A6A',
+    borderWidth: 0,
+    borderRadius: 5,
     paddingVertical: 10,
     paddingHorizontal: 20,
-    borderRadius: 5,
     alignItems: 'center',
     justifyContent: 'center',
-    borderWidth: 1,
-    borderColor: '#CCCCCC',
     },
   buttonText: {
-    color: '#333333',
+    color: '#FFFFFF',
     fontSize: 14,
-    fontWeight: '600',
+    fontWeight: 'bold',
     textAlign: 'center',
   },
   buttonPrimary: {
-    backgroundColor: '#FF8A80',
+    borderWidth: 0,
+    backgroundColor: '#FFFFFF',
   },
   buttonSecondary: {
-    backgroundColor: '#80D8FF',
+    borderWidth: 0,
+    backgroundColor: '#FFFFFF',
   }
 });
 
 export default styles;
-
-// .button {
-//     transition: background-color 0.3s;
-// }
-
-// .button:hover {
-//     background-color: #CCCCCC;
-// }
-
-// .button-primary {
-//     color: #FFFFFF;
-//     border: none;
-// }
-
-// .button-secondary {
-//     color: #FFFFFF;
-//     border: none;
-// }

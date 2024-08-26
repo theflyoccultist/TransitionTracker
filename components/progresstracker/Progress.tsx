@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
-import Card from './Card';
-import Button from './Button';
+import Card from '../Card';
+import Button from '../Button';
  
 
 const Progress: React.FC = () => {
